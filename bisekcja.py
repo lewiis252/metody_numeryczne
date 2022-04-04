@@ -1,5 +1,6 @@
 import math
 def bisekcja(f = lambda x: x+math.exp(x), dokladnosc=0.01, lewy_koniec=-1, prawy_koniec=0, miejsc_po_przecinku=3):
+    '''Oblicza przybliżone miejsce zerowe funkcji na zadanym przedziale metodą bisekcji/połowienia'''
     if f(lewy_koniec) * f(prawy_koniec) > 0:
         print('Brak miejsc zerowych na przedziale.')
         return False

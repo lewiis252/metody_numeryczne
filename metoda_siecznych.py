@@ -1,6 +1,7 @@
+import math
 
 def metoda_siecznych(f = lambda x: x**3+x**2-3*x-3 , dokladnosc=0.001, lewy_koniec=1, prawy_koniec=2, miejsc_po_przecinku = 5):
-    '''Oblicza przybliżone miejsce zerowe funkcji na zadanym przedziale'''
+    '''Oblicza przybliżone miejsce zerowe funkcji na zadanym przedziale metodą siecznych'''
     if f(lewy_koniec) * f(prawy_koniec) > 0:
         print('Brak miejsc zerowych na przedziale.')
         return False
