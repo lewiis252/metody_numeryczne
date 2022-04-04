@@ -7,7 +7,6 @@ def metoda_stycznych(f = lambda x: x**4-2*x-4, f_prim = lambda x: 4*x**3-2, dokl
     else:
         x_0 = prawy_koniec
 
-        x_1 = round(x_0 - f(x_0)/f_prim(x_0), miejsc_po_przecinku)
         x = [x_0]
         index = 1
         while abs(round(f(x[index-1]), miejsc_po_przecinku)) > dokladnosc:
